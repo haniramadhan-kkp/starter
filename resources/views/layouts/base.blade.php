@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <x-partials.head />
+        <x-partials.amassivx.head />
     </head>
     <body>
         {{ $slot }}

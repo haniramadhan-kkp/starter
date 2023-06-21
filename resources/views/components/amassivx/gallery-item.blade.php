@@ -1,8 +1,8 @@
-<div class="grid-item applications">
-    <a class="gallery-link popup-image" href="img/gallery/protfolio-img01.jpg">
+<div class="grid-item {{ $filter }}">
+    <a class="gallery-link popup-image" href="{{ $image }}">
         <figure class="gallery-image">
-            <img src="img/gallery/protfolio-img01.jpg" alt="protfolio-img01" />
-            <figcaption>Applications</figcaption>
+            <img src="{{ $image }}" alt="{{ $alt }}-img01" />
+            <figcaption>{{ $caption }}</figcaption>
         </figure>
     </a>
 </div>

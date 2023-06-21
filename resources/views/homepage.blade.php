@@ -1,38 +1,707 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
     <head>
-        <x-partials.head />
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Amassivx - Multipurpose Business Landing Page Template</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- CSS here -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/animate.min.css" />
+        <link rel="stylesheet" href="css/magnific-popup.css" />
+        <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+        <link rel="stylesheet" href="css/dripicons.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link rel="stylesheet" href="css/default.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
     </head>
     <body>
-        <!-- nav -->
-        <x-partials.nav />
-        <!-- nav-end -->
+        <!-- header -->
+        <header class="header-area">
+            <div id="header-sticky" class="menu-area">
+                <div class="container">
+                    <div class="second-menu">
+                        <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"
+                                        ><img
+                                            src="img/logo/logo.png"
+                                            alt="logo"
+                                    /></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-9">
+                                <div class="responsive">
+                                    <i class="icon dripicons-align-right"></i>
+                                </div>
+                                <div
+                                    class="main-menu text-xl-center text-right"
+                                >
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li class="has-sub">
+                                                <a href="#home">Home</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="index.html"
+                                                            >Home Page 01</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-2.html"
+                                                            >Home Page 02</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-3.html"
+                                                            >Home Page 03</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-4.html"
+                                                            >Home Page 04</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-5.html"
+                                                            >Home Page 05</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-6.html"
+                                                            >Home Page 06</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#about">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#services">Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="#work">Portfolio</a>
+                                            </li>
+                                            <li class="has-sub">
+                                                <a href="#">Other Page</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#pricing"
+                                                            >Pricing</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a href="#team">Team</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#testimonios"
+                                                            >Testimonios</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#blog">Blog</a></li>
+                                            <li>
+                                                <a href="#contact">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 d-none d-xl-block text-right">
+                                <div class="header-btn second-header-btn">
+                                    <a href="#" class="btn">Get a Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-end -->
         <!-- main-area -->
         <main>
             <!-- slider-area -->
-            <x-partials.slider />
+            <section id="home" class="slider-area fix p-relative">
+                <div class="slider-active">
+                    <div
+                        class="single-slider slider-bg d-flex align-items-center"
+                        style="
+                            background-image: url(img/slider/slider_img01.jpg);
+                        "
+                    >
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-2"></div>
+                                <div class="col-xl-8">
+                                    <div
+                                        class="slider-content s-slider-content text-center"
+                                    >
+                                        <h2
+                                            data-animation="fadeInUp"
+                                            data-delay=".4s"
+                                        >
+                                            We're <span>Creative </span>Agency
+                                            Expert.
+                                        </h2>
+                                        <p
+                                            data-animation="fadeInUp"
+                                            data-delay=".6s"
+                                        >
+                                            It is a long established fact that a
+                                            reader will be distracted by the
+                                            readable content layout readable
+                                            English.ratione, id soluta
+                                            aspernatur nulla minus.
+                                        </p>
+                                        <div class="slider-btn mt-55">
+                                            <a
+                                                href="#"
+                                                class="btn ss-btn"
+                                                data-animation="fadeInRight"
+                                                data-delay=".8s"
+                                                >Get a Quote</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="single-slider slider-bg d-flex align-items-center"
+                        style="background-image: url(img/slider/header-img.jpg)"
+                    >
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-2"></div>
+                                <div class="col-xl-8">
+                                    <div
+                                        class="slider-content s-slider-content text-center"
+                                    >
+                                        <h2
+                                            data-animation="fadeInUp"
+                                            data-delay=".4s"
+                                        >
+                                            We're <span>Creative </span>Agency
+                                            Expert.
+                                        </h2>
+                                        <p
+                                            data-animation="fadeInUp"
+                                            data-delay=".6s"
+                                        >
+                                            It is a long established fact that a
+                                            reader will be distracted by the
+                                            readable content layout readable
+                                            English.ratione, id soluta
+                                            aspernatur nulla minus.
+                                        </p>
+                                        <div class="slider-btn mt-55">
+                                            <a
+                                                href="#"
+                                                class="btn ss-btn"
+                                                data-animation="fadeInRight"
+                                                data-delay=".8s"
+                                                >Get a Quote</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#about" class="down-arrow smoth-scroll"
+                    ><i class="fas fa-long-arrow-alt-down"></i
+                ></a>
+            </section>
             <!-- slider-area-end -->
-
             <!-- services-area -->
-            <x-partials.services />
+            <section id="about" class="services-area services-bg pt-120 pb-90">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-10">
+                            <div
+                                class="section-title wow fadeInDown animated mb-80 pl-40 pr-40 text-center"
+                                data-animation="fadeInDown animated"
+                                data-delay=".2s"
+                            >
+                                <span>our services</span>
+                                <h2>How it works</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-30">
+                            <div
+                                class="s-single-services wow fadeInUp animated"
+                                data-animation="fadeInDown animated"
+                                data-delay=".2s"
+                            >
+                                <div class="services-icon">
+                                    <i
+                                        class="fal fa-tachometer-alt-fastest"
+                                    ></i>
+                                </div>
+                                <div class="second-services-content">
+                                    <h5>Speed Optimization</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        inc ididunt ut labore.
+                                    </p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-30">
+                            <div
+                                class="s-single-services active wow fadeInUp animated"
+                                data-animation="fadeInDown animated"
+                                data-delay=".2s"
+                            >
+                                <div class="services-icon">
+                                    <i class="fal fa-users-crown"></i>
+                                </div>
+                                <div class="second-services-content">
+                                    <h5>Parallax Support</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        inc ididunt ut labore.
+                                    </p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-30">
+                            <div
+                                class="s-single-services wow fadeInUp animated"
+                                data-animation="fadeInDown animated"
+                                data-delay=".2s"
+                            >
+                                <div class="services-icon">
+                                    <i class="fal fa-gem"></i>
+                                </div>
+                                <div class="second-services-content">
+                                    <h5>High Performance</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        inc ididunt ut labore.
+                                    </p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- services-area-end -->
-
             <!-- choose-area -->
-            <x-partials.choose />
+            <section
+                class="choose-area pt-120 pb-120 p-relative"
+                style="background: #f5f8fa"
+            >
+                <div
+                    class="chosse-img wow fadeInRight animated"
+                    data-animation="fadeInRight animated"
+                    data-delay=".2s"
+                    style="background-image: url(img/bg/about.jpg)"
+                ></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="choose-wrap">
+                                <div
+                                    class="section-title w-title left-align mb-35 wow fadeInDown animated"
+                                    data-animation="fadeInDown animated"
+                                    data-delay=".2s"
+                                >
+                                    <span>Creative Landingpage</span>
+                                    <h2>Why Choose Us</h2>
+                                </div>
+                                <div
+                                    class="choose-content wow fadeInUp animated"
+                                    data-animation="fadeInDown animated"
+                                    data-delay=".2s"
+                                >
+                                    <p>
+                                        Pellentesque habitant morbi tristique
+                                        senectus et netus et fames acturpis
+                                        egestas. Vestibulum tortor quam, feugiat
+                                        vitae, tempor sit amet, ante. Donec eu
+                                        libero sit amet quam egestas semper.
+                                        mivitae est. Mauris placerat eleifend
+                                        leo. Quisque sit amet est et sapien.
+                                    </p>
+
+                                    <div class="choose-list mb-45">
+                                        <ul>
+                                            <li>
+                                                <i
+                                                    class="icon dripicons-checkmark"
+                                                ></i>
+                                                <span
+                                                    >Pellentesque habitant morbi
+                                                    tristique senectus et netus
+                                                    et fames.</span
+                                                >
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="icon dripicons-checkmark"
+                                                ></i>
+                                                <span
+                                                    >turpis egestas. Vestibulum
+                                                    tortor quam, feugiat vitae,
+                                                    tempor sit.
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="icon dripicons-checkmark"
+                                                ></i>
+                                                <span
+                                                    >amet, ante. Donec eu libero
+                                                    sit amet quam egestas
+                                                    semper.</span
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="choose-btn">
+                                        <a href="#" class="btn">Work With us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- choose-area-end -->
-
             <!-- services-area -->
-            <x-partials.products />
+            <section
+                id="services"
+                class="services-area services-bg services-two pt-120 pb-90"
+            >
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-10">
+                            <div
+                                class="section-title wow fadeInDown animated mb-80 pl-40 pr-40 text-center"
+                                data-animation="fadeInDown animated"
+                                data-delay=".2s"
+                            >
+                                <span>our services</span>
+                                <h2>Best features of the provide</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div
+                                class="s-single-services active wow fadeInUp animated"
+                                data-animation="fadeInDown animated"
+                                data-delay=".2s"
+                            >
+                                <div class="services-icon">
+                                    <i class="fal fa-dice-d10"></i>
+                                </div>
+                                <div class="second-services-content">
+                                    <h5>Pixel Perfect Design</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, ipsum
+                                        consectetur adipisicing elit, sed do
+                                        eiusmod tempor inc ididunt ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div
+                                class="s-single-services wow fadeInUp animated"
+                                data-animation="fadeInDown animated"
+                                data-delay=".2s"
+                            >
+                                <div class="services-icon">
+                                    <i class="fal fa-database"></i>
+                                </div>
+                                <div class="second-services-content">
+                                    <h5>Install & Play With It</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, ipsum
+                                        consectetur adipisicing elit, sed do
+                                        eiusmod tempor inc ididunt ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div
+                                class="s-single-services wow fadeInUp animated"
+                                data-animation="fadeInDown animated"
+                                data-delay=".2s"
+                            >
+                                <div class="services-icon">
+                                    <i class="fal fa-layer-group"></i>
+                                </div>
+                                <div class="second-services-content">
+                                    <h5>Web Development</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, ipsum
+                                        consectetur adipisicing elit, sed do
+                                        eiusmod tempor inc ididunt ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div
+                                class="s-single-services wow fadeInUp animated"
+                                data-animation="fadeInDown animated"
+                                data-delay=".2s"
+                            >
+                                <div class="services-icon">
+                                    <i class="fal fa-pencil-ruler"></i>
+                                </div>
+                                <div class="second-services-content">
+                                    <h5>Web Design</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, ipsum
+                                        consectetur adipisicing elit, sed do
+                                        eiusmod tempor inc ididunt ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-6 wow fadeInUp animated"
+                            data-animation="fadeInDown animated"
+                            data-delay=".2s"
+                        >
+                            <div class="s-single-services">
+                                <div class="services-icon">
+                                    <i class="fal fa-user-plus"></i>
+                                </div>
+                                <div class="second-services-content">
+                                    <h5>Social Media</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, ipsum
+                                        consectetur adipisicing elit, sed do
+                                        eiusmod tempor inc ididunt ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-6 wow fadeInUp animated"
+                            data-animation="fadeInDown animated"
+                            data-delay=".2s"
+                        >
+                            <div class="s-single-services">
+                                <div class="services-icon">
+                                    <i class="fal fa-edit"></i>
+                                </div>
+                                <div class="second-services-content">
+                                    <h5>Content Writing</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, ipsum
+                                        consectetur adipisicing elit, sed do
+                                        eiusmod tempor inc ididunt ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- services-area-end -->
-
             <!-- brand-area -->
-            <x-partials.brand />
+            <div
+                class="brand-area pt-120 pb-120"
+                style="background-color: #425cbb"
+            >
+                <div class="container">
+                    <div class="row brand-active">
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                <img src="img/brand/c-logo1.png" alt="img" />
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                <img src="img/brand/c-logo2.png" alt="img" />
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                <img src="img/brand/c-logo3.png" alt="img" />
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                <img src="img/brand/c-logo4.png" alt="img" />
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                <img src="img/brand/c-logo5.png" alt="img" />
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                <img src="img/brand/c-logo6.png" alt="img" />
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                <img src="img/brand/c-logo1.png" alt="img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- brand-area-end -->
-
             <!-- gallery-area -->
-            <x-partials.gallery />
-            <!-- gallery-area-end -->
+            <section id="work" class="pt-120 pb-120">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-8">
+                            <div
+                                class="section-title wow fadeInDown animated mb-80 text-center"
+                                data-animation="fadeInDown animated"
+                                data-delay=".2s"
+                            >
+                                <span>Best Work</span>
+                                <h2>My Recent Portfolio</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="portfolio wow fadeInUp animated"
+                        data-animation="fadeInDown animated"
+                        data-delay=".2s"
+                    >
+                        <div class="my-masonry mb-30">
+                            <div
+                                class="button-group filter-button-group text-center"
+                            >
+                                <button class="active" data-filter="*">
+                                    All
+                                </button>
+                                <button data-filter=".applications">
+                                    Applications
+                                </button>
+                                <button data-filter=".development">
+                                    Development
+                                </button>
+                                <button data-filter=".logo">Logo</button>
+                                <button data-filter=".web-design">
+                                    Web Design
+                                </button>
+                            </div>
+                        </div>
 
+                        <div class="col3 grid">
+                            <div class="grid-item applications">
+                                <a
+                                    class="gallery-link popup-image"
+                                    href="img/gallery/protfolio-img01.jpg"
+                                >
+                                    <figure class="gallery-image">
+                                        <img
+                                            src="img/gallery/protfolio-img01.jpg"
+                                            alt="protfolio-img01"
+                                        />
+                                        <figcaption>Applications</figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid-item applications development">
+                                <a
+                                    class="gallery-link popup-image"
+                                    href="img/gallery/protfolio-img02.jpg"
+                                >
+                                    <figure class="gallery-image">
+                                        <img
+                                            src="img/gallery/protfolio-img02.jpg"
+                                            alt="protfolio-img01"
+                                        />
+                                        <figcaption>Development 01</figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid-item web-design">
+                                <a
+                                    class="gallery-link popup-image"
+                                    href="img/gallery/protfolio-img03.jpg"
+                                >
+                                    <figure class="gallery-image">
+                                        <img
+                                            src="img/gallery/protfolio-img03.jpg"
+                                            alt="protfolio-img01"
+                                        />
+                                        <figcaption>Web Design 01</figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid-item logo">
+                                <a
+                                    class="gallery-link popup-image"
+                                    href="img/gallery/protfolio-img04.jpg"
+                                >
+                                    <figure class="gallery-image">
+                                        <img
+                                            src="img/gallery/protfolio-img04.jpg"
+                                            alt="protfolio-img01"
+                                        />
+                                        <figcaption>Applications</figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid-item development">
+                                <a
+                                    class="gallery-link popup-image"
+                                    href="img/gallery/protfolio-img05.jpg"
+                                >
+                                    <figure class="gallery-image">
+                                        <img
+                                            src="img/gallery/protfolio-img05.jpg"
+                                            alt="protfolio-img01"
+                                        />
+                                        <figcaption>Development</figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid-item logo web-design">
+                                <a
+                                    class="gallery-link popup-image"
+                                    href="img/gallery/protfolio-img06.jpg"
+                                >
+                                    <figure class="gallery-image">
+                                        <img
+                                            src="img/gallery/protfolio-img06.jpg"
+                                            alt="protfolio-img01"
+                                        />
+                                        <figcaption>Project Name 06</figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- gallery-area-end -->
             <!-- counter-area -->
             <div
                 class="counter-area pt-120 pb-90"
@@ -42,7 +711,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-sm-6">
                             <div
-                                class="single-counter text-center mb-30 wow fadeInUp animated"
+                                class="single-counter mb-30 wow fadeInUp animated text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -55,7 +724,7 @@
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <div
-                                class="single-counter text-center mb-30 wow fadeInUp animated"
+                                class="single-counter mb-30 wow fadeInUp animated text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -68,7 +737,7 @@
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <div
-                                class="single-counter text-center mb-30 wow fadeInUp animated"
+                                class="single-counter mb-30 wow fadeInUp animated text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -81,7 +750,7 @@
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <div
-                                class="single-counter text-center mb-30 wow fadeInUp animated"
+                                class="single-counter mb-30 wow fadeInUp animated text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -102,7 +771,7 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-7 col-lg-8">
                             <div
-                                class="section-title text-center mb-80 wow fadeInDown animated"
+                                class="section-title wow fadeInDown animated mb-80 text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -114,7 +783,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div
-                                class="pricing-box text-center mb-60 wow fadeInUp animated"
+                                class="pricing-box wow fadeInUp animated mb-60 text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -146,7 +815,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div
-                                class="pricing-box active text-center mb-60 wow fadeInUp animated"
+                                class="pricing-box active wow fadeInUp animated mb-60 text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -178,7 +847,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div
-                                class="pricing-box text-center mb-60 wow fadeInUp animated"
+                                class="pricing-box wow fadeInUp animated mb-60 text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -222,7 +891,7 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-6 col-lg-8">
                             <div
-                                class="section-title text-center mb-80 wow fadeInDown animated"
+                                class="section-title wow fadeInDown animated mb-80 text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -234,7 +903,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div
-                                class="single-team text-center mb-30 wow fadeInUp animated"
+                                class="single-team mb-30 wow fadeInUp animated text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -266,7 +935,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div
-                                class="single-team text-center mb-30 wow fadeInUp animated"
+                                class="single-team mb-30 wow fadeInUp animated text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -298,7 +967,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div
-                                class="single-team text-center mb-30 wow fadeInUp animated"
+                                class="single-team mb-30 wow fadeInUp animated text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -344,7 +1013,7 @@
                         <div class="col-lg-2"></div>
                         <div class="col-lg-8">
                             <div
-                                class="section-title center-align mb-40 wow fadeInDown animated"
+                                class="section-title center-align wow fadeInDown animated mb-40"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -435,7 +1104,7 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-8 col-lg-10">
                             <div
-                                class="section-title text-center mb-80 wow fadeInDown animated"
+                                class="section-title wow fadeInDown animated mb-80 text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >
@@ -601,7 +1270,7 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-7 col-lg-8">
                             <div
-                                class="section-title text-center mb-80 wow fadeInDown animated"
+                                class="section-title wow fadeInDown animated mb-80 text-center"
                                 data-animation="fadeInDown animated"
                                 data-delay=".2s"
                             >

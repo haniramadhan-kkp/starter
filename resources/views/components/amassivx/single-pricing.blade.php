@@ -1,8 +1,4 @@
-<div
-    class="pricing-box text-center mb-60 wow fadeInUp animated"
-    data-animation="fadeInDown animated"
-    data-delay=".2s"
->
+<div class="pricing-box text-center mb-60 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
     <div class="pricing-head">
         <h4>Basic Plan</h4>
         <div class="price-count mb-30">

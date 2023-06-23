@@ -2,11 +2,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-10">
-                <div
-                    class="section-title text-center mb-80 wow fadeInDown animated"
-                    data-animation="fadeInDown animated"
-                    data-delay=".2s"
-                >
+                <div class="section-title text-center mb-80 wow fadeInDown animated" data-animation="fadeInDown animated"
+                    data-delay=".2s">
                     <span>New Every Day</span>
                     <h2>Latest News</h2>
                 </div>

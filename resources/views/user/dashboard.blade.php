@@ -1,7 +1,5 @@
 <x-Sbadmin-layout>
-    <header
-        class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10"
-    >
+    <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
         <div class="container-xl px-4">
             <div class="page-header-content pt-4">
                 <div class="row align-items-center justify-content-between">
@@ -24,17 +22,10 @@
     <div class="container-xl mt-n10 px-4">
         <div class="row">
             <x-sbadmin.dashboard-card>
-                <x-slot:icon
-                    ><i
-                        class="feather-xl text-primary mb-3"
-                        data-feather="package"
-                    ></i
-                ></x-slot:icon>
+                <x-slot:icon><i class="feather-xl text-primary mb-3" data-feather="package"></i></x-slot:icon>
                 <x-slot:head>Powerful Components</x-slot:head>
-                <x-slot:body
-                    >To create informative visual elements on your
-                    pages</x-slot:body
-                >
+                <x-slot:body>To create informative visual elements on your
+                    pages</x-slot:body>
             </x-sbadmin.dashboard-card>
         </div>
         <div class="row">
@@ -56,12 +47,8 @@
                 <!-- Illustration dashboard card example-->
                 <div class="card">
                     <div class="card-body p-5 text-center">
-                        <img
-                            class="img-fluid mb-4"
-                            src="sbadmin/assets/img/illustrations/team-spirit.svg"
-                            alt=""
-                            style="max-width: 16.25rem"
-                        />
+                        <img class="img-fluid mb-4" src="sbadmin/assets/img/illustrations/team-spirit.svg"
+                            alt="" style="max-width: 16.25rem" />
                         <h5>Team Access</h5>
                         <p class="mb-4">
                             Upgrade your plan to get access to team

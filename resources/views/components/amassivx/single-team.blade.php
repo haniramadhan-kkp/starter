@@ -1,8 +1,4 @@
-<div
-    class="single-team text-center mb-30 wow fadeInUp animated"
-    data-animation="fadeInDown animated"
-    data-delay=".2s"
->
+<div class="single-team text-center mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
     <div class="team-thumb">
         <img src="img/team/team-img01.jpg" alt="img" />
     </div>

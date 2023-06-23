@@ -4,41 +4,20 @@
         <div class="card-header">
             Recent Activity
             <div class="dropdown no-caret">
-                <button
-                    class="btn btn-transparent-dark btn-icon dropdown-toggle"
-                    id="dropdownMenuButton"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                >
+                <button class="btn btn-transparent-dark btn-icon dropdown-toggle" id="dropdownMenuButton" type="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="text-gray-500" data-feather="more-vertical"></i>
                 </button>
-                <div
-                    class="dropdown-menu dropdown-menu-end animated--fade-in-up"
-                    aria-labelledby="dropdownMenuButton"
-                >
+                <div class="dropdown-menu dropdown-menu-end animated--fade-in-up" aria-labelledby="dropdownMenuButton">
                     <h6 class="dropdown-header">Filter Activity:</h6>
-                    <a class="dropdown-item" href="#!"
-                        ><span class="badge bg-green-soft text-green my-1"
-                            >Commerce</span
-                        ></a
-                    >
-                    <a class="dropdown-item" href="#!"
-                        ><span class="badge bg-blue-soft text-blue my-1"
-                            >Reporting</span
-                        ></a
-                    >
-                    <a class="dropdown-item" href="#!"
-                        ><span class="badge bg-yellow-soft text-yellow my-1"
-                            >Server</span
-                        ></a
-                    >
-                    <a class="dropdown-item" href="#!"
-                        ><span class="badge bg-purple-soft text-purple my-1"
-                            >Users</span
-                        ></a
-                    >
+                    <a class="dropdown-item" href="#!"><span
+                            class="badge bg-green-soft text-green my-1">Commerce</span></a>
+                    <a class="dropdown-item" href="#!"><span
+                            class="badge bg-blue-soft text-blue my-1">Reporting</span></a>
+                    <a class="dropdown-item" href="#!"><span
+                            class="badge bg-yellow-soft text-yellow my-1">Server</span></a>
+                    <a class="dropdown-item" href="#!"><span
+                            class="badge bg-purple-soft text-purple my-1">Users</span></a>
                 </div>
             </div>
         </div>
@@ -48,9 +27,7 @@
                 <div class="timeline-item">
                     <div class="timeline-item-marker">
                         <div class="timeline-item-marker-text">27 min</div>
-                        <div
-                            class="timeline-item-marker-indicator bg-green"
-                        ></div>
+                        <div class="timeline-item-marker-indicator bg-green"></div>
                     </div>
                     <div class="timeline-item-content">
                         New order placed!
@@ -62,9 +39,7 @@
                 <div class="timeline-item">
                     <div class="timeline-item-marker">
                         <div class="timeline-item-marker-text">58 min</div>
-                        <div
-                            class="timeline-item-marker-indicator bg-blue"
-                        ></div>
+                        <div class="timeline-item-marker-indicator bg-blue"></div>
                     </div>
                     <div class="timeline-item-content">
                         Your
@@ -76,9 +51,7 @@
                 <div class="timeline-item">
                     <div class="timeline-item-marker">
                         <div class="timeline-item-marker-text">2 hrs</div>
-                        <div
-                            class="timeline-item-marker-indicator bg-purple"
-                        ></div>
+                        <div class="timeline-item-marker-indicator bg-purple"></div>
                     </div>
                     <div class="timeline-item-content">
                         New user
@@ -90,9 +63,7 @@
                 <div class="timeline-item">
                     <div class="timeline-item-marker">
                         <div class="timeline-item-marker-text">1 day</div>
-                        <div
-                            class="timeline-item-marker-indicator bg-yellow"
-                        ></div>
+                        <div class="timeline-item-marker-indicator bg-yellow"></div>
                     </div>
                     <div class="timeline-item-content">
                         Server activity monitor alert
@@ -102,9 +73,7 @@
                 <div class="timeline-item">
                     <div class="timeline-item-marker">
                         <div class="timeline-item-marker-text">1 day</div>
-                        <div
-                            class="timeline-item-marker-indicator bg-green"
-                        ></div>
+                        <div class="timeline-item-marker-indicator bg-green"></div>
                     </div>
                     <div class="timeline-item-content">
                         New order placed!
@@ -116,15 +85,11 @@
                 <div class="timeline-item">
                     <div class="timeline-item-marker">
                         <div class="timeline-item-marker-text">1 day</div>
-                        <div
-                            class="timeline-item-marker-indicator bg-purple"
-                        ></div>
+                        <div class="timeline-item-marker-indicator bg-purple"></div>
                     </div>
                     <div class="timeline-item-content">
                         Details for
-                        <a class="fw-bold text-dark" href="#!"
-                            >Marketing and Planning Meeting</a
-                        >
+                        <a class="fw-bold text-dark" href="#!">Marketing and Planning Meeting</a>
                         have been updated.
                     </div>
                 </div>
@@ -132,9 +97,7 @@
                 <div class="timeline-item">
                     <div class="timeline-item-marker">
                         <div class="timeline-item-marker-text">2 days</div>
-                        <div
-                            class="timeline-item-marker-indicator bg-green"
-                        ></div>
+                        <div class="timeline-item-marker-indicator bg-green"></div>
                     </div>
                     <div class="timeline-item-content">
                         New order placed!

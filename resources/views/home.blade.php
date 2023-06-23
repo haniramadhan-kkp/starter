@@ -7,9 +7,7 @@
         <!-- slider-area -->
         <x-partials.amassivx.slider>
             <x-amassivx.single-slider>
-                <x-slot:image>
-                    amassivx/img/slider/slider_img01.jpg
-                </x-slot:image>
+                <x-slot:image> /img/Banner_05.jpg </x-slot:image>
                 <x-slot:header>
                     Registrasi anggota <span>Ispikani</span>
                 </x-slot:header>
@@ -20,9 +18,7 @@
                 </x-slot:description>
 
                 <x-slot:button> Bergabung bersama kami </x-slot:button>
-                <x-slot:link
-                    >https://laravel.com/docs/10.x/blade#component-attributes</x-slot:link
-                >
+                <x-slot:link>https://laravel.com/docs/10.x/blade#component-attributes</x-slot:link>
             </x-amassivx.single-slider>
         </x-partials.amassivx.slider>
         <!-- slider-area-end -->
@@ -86,29 +82,22 @@
             <x-partials.amassivx.products>
                 <div class="col-lg-4 col-md-6">
                     <x-amassivx.single-product>
-                        <x-slot:icon
-                            ><i class="fal fa-dice-d10"></i
-                        ></x-slot:icon>
+                        <x-slot:icon><i class="fal fa-dice-d10"></i></x-slot:icon>
                         <x-slot:head>Pixel Perfect Design</x-slot:head>
-                        <x-slot:body
-                            >Lorem ipsum dolor sit amet, ipsum consectetur
+                        <x-slot:body>Lorem ipsum dolor sit amet, ipsum consectetur
                             adipisicing elit, sed do eiusmod tempor inc ididunt
-                            ut.</x-slot:body
-                        >
+                            ut.</x-slot:body>
                     </x-amassivx.single-product>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <x-amassivx.single-product>
-                        <x-slot:icon
-                            ><i class="fal fa-dice-d10"></i
-                        ></x-slot:icon>
+                        <x-slot:icon><i class="fal fa-dice-d10"></i></x-slot:icon>
                         <x-slot:head>Pixel Perfect Design</x-slot:head>
-                        <x-slot:body
-                            >Lorem ipsum dolor sit amet, ipsum consectetur
+                        <x-slot:body>Lorem ipsum dolor sit amet, ipsum consectetur
                             adipisicing elit, sed do eiusmod tempor inc ididunt
-                            ut.</x-slot:body
-                        >
+                            ut.</x-slot:body>
                     </x-amassivx.single-product>
+
                 </div>
             </x-partials.amassivx.products>
             <!-- services-area-end -->

@@ -4,13 +4,9 @@
             <div class="second-menu">
                 <div class="row align-items-center">
                     <div class="col-xl-2 col-lg-2">
-                        <div class="logo" hidden>
-                            <a href="index.html"
-                                ><img
-                                    src="amassivx/img/logo/logo-ispikani.png"
-                                    alt="logo"
-                                    style="width: 50%; height: auto"
-                                />
+                        <div class="logo">
+                            <a href="{{ Route('home') }}"><img src="/img/logo.png" alt="logo"
+                                    style="width: 150%; height: auto" />
                             </a>
                         </div>
                     </div>
@@ -22,79 +18,32 @@
                             <nav id="mobile-menu">
                                 <ul>
                                     <li class="has-sub">
-                                        <a href="#home">Home</a>
-                                        <ul>
-                                            <li>
-                                                <a href="index.html"
-                                                    >Home Page 01</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a href="index-2.html"
-                                                    >Home Page 02</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a href="index-3.html"
-                                                    >Home Page 03</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a href="index-4.html"
-                                                    >Home Page 04</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a href="index-5.html"
-                                                    >Home Page 05</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a href="index-6.html"
-                                                    >Home Page 06</a
-                                                >
-                                            </li>
-                                        </ul>
+                                        <a href="{{ Route('home') }}"> Home</a>
                                     </li>
                                     <li>
-                                        <a href="#about">About Us</a>
+                                        <a href="#about"> Organisasi</a>
                                     </li>
                                     <li>
-                                        <a href="#services">Services</a>
+                                        <a href="#services"> Berita </a>
                                     </li>
                                     <li>
-                                        <a href="#work">Portfolio</a>
+                                        <a href="#work"> Publikasi </a>
                                     </li>
-                                    <li class="has-sub">
-                                        <a href="#">Other Page</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#pricing">Pricing</a>
-                                            </li>
-                                            <li>
-                                                <a href="#team">Team</a>
-                                            </li>
-                                            <li>
-                                                <a href="#testimonios"
-                                                    >Testimonios</a
-                                                >
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#blog">Blog</a></li>
+
+                                    <li><a href="#blog">Agenda</a></li>
                                     <li>
-                                        <a href="#contact">Contact</a>
+                                        <a href="#contact">Survei</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
-                    <div class="col-xl-2 d-none d-xl-block text-right">
-                        <div class="header-btn second-header-btn">
-                            <a href="{{ Route('login') }}" class="btn"
-                                >Sign In</a
-                            >
-                        </div>
+
+                    <div class="col-xl-1 d-none d-xl-block text-right">
+                        <a href="{{ Route('login') }}" class="btn-primer">Sign In</a>
+                    </div>
+                    <div class="col-xl-1 d-none d-xl-block text-right">
+                        <a href="{{ Route('register') }}" class="btn">Register</a>
                     </div>
                 </div>
             </div>

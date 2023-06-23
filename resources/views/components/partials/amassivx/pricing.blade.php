@@ -2,11 +2,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-7 col-lg-8">
-                <div
-                    class="section-title text-center mb-80 wow fadeInDown animated"
-                    data-animation="fadeInDown animated"
-                    data-delay=".2s"
-                >
+                <div class="section-title text-center mb-80 wow fadeInDown animated" data-animation="fadeInDown animated"
+                    data-delay=".2s">
                     <span>Pricing List</span>
                     <h2>Our Packages</h2>
                 </div>

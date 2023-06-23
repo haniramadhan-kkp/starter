@@ -1,8 +1,4 @@
-<div
-    class="s-single-services active wow fadeInUp animated"
-    data-animation="fadeInDown animated"
-    data-delay=".2s"
->
+<div class="s-single-services active wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
     <div class="services-icon">
         {{ $icon }}
     </div>

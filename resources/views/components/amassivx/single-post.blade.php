@@ -1,12 +1,6 @@
-<div
-    class="single-post mb-30 wow fadeInUp animated"
-    data-animation="fadeInDown animated"
-    data-delay=".2s"
->
+<div class="single-post mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
     <div class="blog-thumb">
-        <a href="blog-details.html"
-            ><img src="img/blog/blog_img01.jpg" alt="img"
-        /></a>
+        <a href="blog-details.html"><img src="img/blog/blog_img01.jpg" alt="img" /></a>
     </div>
     <div class="blog-content">
         <div class="b-meta mb-20">
@@ -21,9 +15,7 @@
             </ul>
         </div>
         <h4>
-            <a href="blog-details.html"
-                >Making Distribut Product Team Work More With Monday</a
-            >
+            <a href="blog-details.html">Making Distribut Product Team Work More With Monday</a>
         </h4>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisi cing elit sed do

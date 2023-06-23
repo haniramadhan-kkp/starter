@@ -10,11 +10,7 @@
                         {{ $body }}
                     </div>
                 </div>
-                <img
-                    src="sbadmin/assets/img/illustrations/browser-stats.svg"
-                    alt="..."
-                    style="width: 8rem"
-                />
+                <img src="sbadmin/assets/img/illustrations/browser-stats.svg" alt="..." style="width: 8rem" />
             </div>
         </div>
     </a>

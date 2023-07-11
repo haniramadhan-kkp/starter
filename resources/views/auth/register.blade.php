@@ -1,52 +1,136 @@
-<x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
-        @csrf
+<!DOCTYPE html>
+<html lang="en">
 
-        <!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required
-                autofocus autocomplete="name" />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ispikani</title>
+    <link href="/sbadmin/css/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+    <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous">
+    </script>
+</head>
+
+<body class="bg-primary">
+    <div id="layoutAuthentication">
+        <div id="layoutAuthentication_content">
+            <main>
+                <div class="container-xl px-4">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <!-- Basic registration form-->
+                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                <div class="card-header justify-content-center">
+                                    <h3 class="fw-light my-4">Create Account</h3>
+                                </div>
+                                <div class="card-body">
+                                    <!-- Registration form-->
+                                    <form method="POST" action="{{ route('register') }}">
+                                        @csrf
+                                        <!-- Form Row-->
+                                        <div class="row gx-3">
+                                            <div class="col-md-6">
+                                                <!-- Form Group (first name)-->
+                                                <div class="mb-3">
+                                                    <label class="small mb-1" for="name">Name</label>
+                                                    <input class="form-control" id="name" type="text"
+                                                        placeholder="Enter your name" name="name" />
+                                                    @error('name')
+                                                        <span class="text-danger d-block">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <!-- Form Group (last name)-->
+                                                <div class="mb-3">
+                                                    <label class="small mb-1" for="email">Email</label>
+                                                    <input class="form-control" id="email" type="email"
+                                                        aria-describedby="emailHelp" placeholder="Enter email address"
+                                                        name="email" />
+                                                    @error('email')
+                                                        <span class="text-danger d-block">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Form Row    -->
+                                        <div class="row gx-3">
+                                            <div class="col-md-6">
+                                                <!-- Form Group (password)-->
+                                                <div class="mb-3">
+                                                    <label class="small mb-1" for="inputPassword">Password</label>
+                                                    <input class="form-control" id="inputPassword" type="password"
+                                                        placeholder="Enter password" name="password" />
+                                                    @error('password')
+                                                        <span class="text-danger d-block">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <!-- Form Group (confirm password)-->
+                                                <div class="mb-3">
+                                                    <label class="small mb-1" for="inputConfirmPassword">Confirm
+                                                        Password</label>
+                                                    <input class="form-control" id="inputConfirmPassword"
+                                                        type="password" placeholder="Confirm password"
+                                                        name="password_confirmation" />
+                                                    @error('password_confirmation')
+                                                        <span class="text-danger d-block">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Form Group (create account submit)-->
+                                        <button class="btn btn-primary btn-block" type="submit">Create
+                                            Account</button>
+                                    </form>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <div class="small"><a href="{{ route('login') }}">Have an account? Go to login</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-
-        <!-- Email Address -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')"
-                required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        <div id="layoutAuthentication_footer">
+            <footer class="footer-admin mt-auto footer-dark">
+                <div class="container-xl px-4">
+                    <div class="row">
+                        <div class="col-md-6 small">Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            Ispikani All Rights Reserved.
+                        </div>
+                        <div class="col-md-6 text-md-end small">
+                            <a href="#!">Privacy Policy</a>
+                            &middot;
+                            <a href="#!">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+    <script src="/sbadmin/js/scripts.js"></script>
+</body>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required
-                autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full" type="password"
-                name="password_confirmation" required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
-
-            <x-primary-button class="ml-4">
-                {{ __('Register') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+</html>

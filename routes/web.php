@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegistrationController;
 use Illuminate\Support\Facades\Route;
@@ -16,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('landing.index');
 })->name('home');
 
 Route::get('/dashboard', function () {
@@ -39,7 +40,13 @@ Route::group([
         'as' => 'user.'
     ], function() {
         Route::resource('/registrations', RegistrationController::class);
+        Route::post('/storepic', [RegistrationController::class, 'storepic'])->name('storepic');
+        Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+        Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+        Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     });
 });
 
 require __DIR__.'/auth.php';
+
+Route::resource('posts', PostsController::class)->only('index', 'create', 'edit');

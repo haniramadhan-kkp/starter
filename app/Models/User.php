@@ -3,6 +3,8 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+
+use Filament\Models\Contracts\FilamentUser;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -10,10 +12,13 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
-class User extends Authenticatable
+class User extends Authenticatable implements HasMedia, FilamentUser
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable, InteractsWithMedia;
 
     /**
      * The attributes that are mass assignable.
@@ -24,7 +29,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'is_admin'
+        'is_admin',
+        'image'
     ];
 
     /**
@@ -47,6 +53,31 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
+    public function canAccessFilament(): bool
+    {
+        return $this->is('superadmin');
+    }
+
+    public function is($roleName)
+    {
+        foreach ($this->roles()->get() as $role)
+        {
+            if ($role->name == $roleName)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public function registerMediaConversions(Media $media = null): void
+    {
+        $this->addMediaConversion('thumbnail')
+            ->width(50)
+            ->height(50);
+    }
+
     public function registration(): HasOne
     {
         return $this->hasOne(Registration::class, 'user_id', 'id');
@@ -54,7 +85,7 @@ class User extends Authenticatable
 
     public function roles(): BelongsToMany
     {
-        return $this->belongsToMany(Role::class, 'role_user', 'user_id', 'role_id');
+        return $this->belongsToMany(Role::class, 'user_role', 'user_id', 'role_id');
     }
 
     public function publications(): HasMany

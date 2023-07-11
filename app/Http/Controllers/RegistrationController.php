@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Registration;
+use App\Models\Post;
+use Auth;
 use Illuminate\Http\Request;
 
 class RegistrationController extends Controller
@@ -12,7 +14,7 @@ class RegistrationController extends Controller
      */
     public function index()
     {
-        return view('user.registration.edit');
+        
     }
 
     /**
@@ -44,7 +46,10 @@ class RegistrationController extends Controller
      */
     public function edit(Registration $registration)
     {
-        //
+        if (auth()->user()->id != $registration->user_id) {
+            return 404;
+        }
+        return view('user.registration.edit', compact('registration'));
     }
 
     /**
@@ -52,7 +57,31 @@ class RegistrationController extends Controller
      */
     public function update(Request $request, Registration $registration)
     {
-        //
+        $request->validate([
+            'nama_lengkap' => 'required',
+            'tempat_lahir' => 'required',
+            'tanggal_lahir' => 'required',
+            'alamat_domisili' => 'required',
+            'kabupaten_domisili' => 'required',
+            'provinsi_domisili' => 'required',
+            'pekerjaan' => 'required',
+            'wa_number' => 'required',
+            'is_lama' => 'required',
+        ]);
+
+        $registration->update($request->all());
+
+        return redirect()->route('dashboard.user.registrations.edit', $registration->id)->with('success', 'Data berhasil disimpan');
+    }
+
+    public function storepic(Request $request)
+    {
+        $request->validate([
+            'profile' => 'required | image' 
+        ]);
+        Auth::user()->clearMediaCollection('profile_pic');
+        Auth::user()->addMediaFromRequest('profile')->toMediaCollection('profile_pic');
+        return redirect()->route('dashboard.user.registrations.edit', Auth::user()->registration->id)->with('success', 'Data berhasil disimpan');
     }
 
     /**

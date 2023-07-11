@@ -47,7 +47,7 @@ class RegistrationController extends Controller
     public function edit(Registration $registration)
     {
         if (auth()->user()->id != $registration->user_id) {
-            return 404;
+            return abort(404);
         }
         return view('user.registration.edit', compact('registration'));
     }
